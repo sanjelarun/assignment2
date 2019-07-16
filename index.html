@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title> Assignment 1 </title>
+	</head>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" href="phone.css">
+	<link rel="stylesheet" href="all.css">
+	<body>
+	<div class = "mainPanel"  id="main">
+		<div class = "pure-u-1" id="mainTabs"> 
+			<button class="pure-button tabButtons" id = "btnDailer"> Dialer </button>
+			<button class="pure-button tabButtons" id = "btnContact" > Contacts </button>
+			<button class="pure-button tabButtons" id = "btnAdd"> Add </button>
+			<button class="pure-button tabButtons" id = "btnGesture"> Test Gestures </button>
+		</div>
+		<div></div>
+		</br>
+		
+		<div id = "dialerTab">
+			<div id = "displayPanel" class="dialDisplay">
+				Dialer
+			</br>
+				<form  >
+				<input class="dialer" id = "display" type="text" disabled >
+				</form>
+			</div>
+			</br>
+			<div  id = "numberPad">
+				<div>
+					<button class="pure-button dialButton"> 1 </button>
+					<button class="pure-button dialButton"> 2 </button>
+					<button class="pure-button dialButton"> 3 </button>
+				</div>
+				</br>
+				<div>
+					<button class="pure-button dialButton"> 4 </button>
+					<button class="pure-button dialButton"> 5 </button>
+					<button class="pure-button dialButton"> 6 </button>
+				</div>
+				</br>
+				<div>
+					<button class="pure-button dialButton"> 7 </button>
+					<button class="pure-button dialButton"> 8 </button>
+					<button class="pure-button dialButton"> 9 </button>
+				</div>
+				</br>
+				<div>
+					<button class="pure-button dialButton"> * </button>
+					<button class="pure-button dialButton"> 0 </button>
+					<button class="pure-button dialButton"> # </button>
+				</div>
+				</br>
+				<div>
+					<button class="pure-button dialButton2" id="Dial"> <i class="fas fa-phone-alt"></i> Dial </button>
+					<button class="pure-button dialButton2" id ="Clear"> <i class="fas fa-times"></i>  Clear </button>
+				</div>
+			</div>
+		</div>
+		<div id = "contactList">
+			<span id = "contactAdd"></span>
+			<legend class = "labelText"> Contacts </legend>
+			<div id ="contactButton">
+				<button class='pure-button pure-button-primary contactButton'>Arun Sanjel</button>
+				<button class='pure-button pure-button-primary contactButton'>Frank Lampard</button>
+				<button class='pure-button pure-button-primary contactButton'>John Smith</button>
+				<button class='pure-button pure-button-primary contactButton'>Hello World</button>
+				<button class='pure-button pure-button-primary contactButton'>Random Name</button>
+				<button class='pure-button pure-button-primary contactButton'>Random Name 2</button>
+			</div>
+		</div>
+		<div id = "addContact">
+			<form class="pure-form pure-form-stacked my-form" id="addContactForm">
+				<fieldset>
+					<legend class="labelText" > Add A Contact </legend>
+					<label for="Name"> Name </label>
+					<input id = "name"  type = "text" placeholder=" E.g John Smith" class="my-input" required>
+					<label for="Phone"> Phone Number </label>
+					<input id = "phone"  type = "text" placeholder="123-456-7890" class="my-input" required>
+					<label for="Email"> Email </label>
+					<input id = "email"  type = "email" placeholder=" E.g john_smith@baylor.edu" class="my-input">
+					<br>		
+				</fieldset>
+				
+			</form>
+			<button class="pure-button floatLeft " id= "Dial1"> <i class="fas fa-plus"></i> &nbsp; Add </button>
+			<button class="pure-button floatRight" id ="Clear2"> <i class="fas fa-times"></i> &nbsp;Clear </button>
+		</div>
+		<div id = "test_Gestures"> 
+		<legend class = "labelText"> Gesture Practice </legend>
+		<div id = "showControls"> </div>
+		<div id = "gestureBox"> </div>	
+		</div>
+		<div id = "gesturePanel">
+		</br>
+		<legend class = "labelText" style = "margin-left:120px;"> Swipe Here </legend>
+			<div id = "smallGestureBox"> </div>
+			<div id = "smallGestureAction"></div>
+		</div>
+			
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="phone.js"></script>
+	<script src="all.js"></script>
+	</body>
+	
+</html>
+</html>
