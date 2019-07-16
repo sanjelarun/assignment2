@@ -94,7 +94,7 @@ $("#smallGestureBox").mousedown( function (e){
 	
 	smallX = e.pageX - $(this).offset().left;
 	smallY = e.pageY - $(this).offset().top;
-	$("#showControls").text("Mouse down");
+	//$("#showControls").text("Mouse down");
 
 });
 $("#smallGestureBox").mouseup( function (e){
@@ -121,7 +121,7 @@ $("#smallGestureBox").mouseup( function (e){
 		//showDialer();
 	}
 	else if (tempX == x && tempY == smallY) {
-		$("#showControls").text("Mouse up");
+		//$("#showControls").text("Mouse up");
 	}
 	
 	
