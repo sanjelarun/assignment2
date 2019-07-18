@@ -127,6 +127,22 @@ $("#smallGestureBox").mouseup( function (e){
 	
 	
 });
+
+$("body").keydown(function(e){
+	if ((e.keyCode || e.which) == 37){
+		nextTab = (currentTab - 1);
+		nextTab = (nextTab == -1 ) ? 3 : nextTab; 
+		console.log(nextTab);
+		tabList[nextTab]();
+		$("#smallGestureAction").text("Left Arrow Pressed");
+	} 
+	if ((e.keyCode || e.which) == 39){
+		nextTab = (currentTab + 1) % 4;
+		console.log(nextTab);
+		tabList[nextTab]();
+		$("#smallGestureAction").text(" Right Arrow Pressed");
+	}
+});
 function showDialer(){
 	$("#dialerTab").show();
 	$("#contactList").hide();

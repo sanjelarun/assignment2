@@ -6,7 +6,7 @@
 }
 
 .mainPanel{
-	margin: 10px;
+	margin: 30px;
 	width:100%;
 }
 .dialer{
@@ -109,9 +109,9 @@
 	border-radius: 10px;
 }
 #smallGestureAction{
-	margin-left: 110px;
+	margin-left: 80px;
 	border: 1px green solid;
-	width:100px;
+	width:150px;
 	height: 20px;
 	background-color: white;
 	border-radius: 10px;
